@@ -13,6 +13,7 @@ exports.getList = (req, res) => {
 
 exports.detail = (req, res) => {
     console.log('id la: ', req.params.id)
+    console.log('Thay doi')
     var data = Book.getById(req.params.id, (response) =>{
         res.send({result: response})
     })
